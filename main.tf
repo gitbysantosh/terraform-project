@@ -27,7 +27,7 @@ resource "aws_instance" "two" {
   instance_type   = "t2.medium"
   key_name        = "tokyokey"
   vpc_security_group_ids = [aws_security_group.five.id]
-  availability_zone = "ap-northest-1c"
+  availability_zone = "ap-northeast-1c"
   user_data       = <<EOF
 #!/bin/bash
 sudo -i
